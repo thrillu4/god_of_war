@@ -1,0 +1,26 @@
+@import './colors.scss';
+
+@mixin button($bg: $violet) {
+    background: $bg;
+    margin-top: 60px;
+    width: max-content;
+    background: $bg;
+    border-radius: 6px;
+    line-height: 19px;
+    padding: 12px 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $white;
+    cursor: pointer;
+    transition: background 0.25s;
+}
+
+@mixin hoverViolet {
+    &:hover {
+      background: #9468da;
+    }
+  
+    &:active {
+      background: #6039a0;
+    }
+}
