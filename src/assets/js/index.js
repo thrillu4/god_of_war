@@ -1,3 +1,3 @@
-import '../styles/reset.scss';
-import '../styles/mixins.scss';
+import '../styles/base/reset.scss';
+import '../styles/base/mixins.scss';
 import '../styles/styles.scss';

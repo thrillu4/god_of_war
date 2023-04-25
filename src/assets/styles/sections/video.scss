@@ -1,0 +1,56 @@
+.video {
+    margin-top: 120px;
+    position: relative;
+    transition: transform .5s;
+    transform: scale(1);
+    &_header {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 47px;
+        color: $white;
+        text-align: center;
+    }
+    &_info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+        &-title {
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 39px;
+            color: $white;
+        }
+        &-btn {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            background: $dark;
+            border-radius: 6px;
+            color: $white;
+            width: max-content;
+            padding: 9px 26px;
+            margin: 0 auto;
+            margin-top: 38px;
+            cursor: pointer;
+            transition: background .25s;
+            text-transform: uppercase;
+            &:hover {
+                background-color: #525c67;
+            }
+        }
+        &.hidden {
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    video {
+        margin-top: 32px;
+        width: 100%;
+        height: auto;
+    }
+}
