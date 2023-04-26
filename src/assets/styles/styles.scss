@@ -1,9 +1,13 @@
+//base
 @import './base/colors.scss';
 @import './base/animation.scss';
 @import './base/mixins.scss';
 
+//sections
 @import './sections/head.scss';
 @import './sections/editions.scss';
 @import './sections/dual.scss';
 @import './sections/video.scss';
 @import './sections/explore.scss';
+@import './sections/news.scss';
+@import './sections/faq.scss';
