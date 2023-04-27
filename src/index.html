@@ -38,13 +38,12 @@
                     </div>
                     <nav class="header_nav">
                         <ul class="header_menu-items flex flex-center">
-                            <li class="header_menu-item header_menu-hamburger"></li>
-                            <li class="header_menu-item">editions</li>
-                            <li class="header_menu-item">controller</li>
-                            <li class="header_menu-item">ABOUT GAME</li>
-                            <li class="header_menu-item">Explore</li>
-                            <li class="header_menu-item">news</li>
-                            <li class="header_menu-item">FAQ</li>
+                            <li class="header_menu-item" href="#editions">editions</li>
+                            <li class="header_menu-item" href="#dual">controller</li>
+                            <li class="header_menu-item" href="#video">ABOUT GAME</li>
+                            <li class="header_menu-item" href="#explore">Explore</li>
+                            <li class="header_menu-item" href="#news">news</li>
+                            <li class="header_menu-item" href="#faq">FAQ</li>
                             <li class="header_menu-item lang">
                                 <span class="current_lang">English</span>
                                 <svg
@@ -82,16 +81,20 @@
                     <span>Release :</span>
                     <div class="header_tab flex flex-center">
                         <div class="header_tab-days">
-                            <div class="header_tab-days_value">20</div>
+                            <div class="header_tab-days_value" id="days">20</div>
                             <div class="header_tab-days_info">D</div>
                         </div>
                         <div class="header_tab-days">
-                            <div class="header_tab-days_value">20</div>
+                            <div class="header_tab-days_value" id="hours">20</div>
                             <div class="header_tab-days_info">H</div>
                         </div>
                         <div class="header_tab-days">
-                            <div class="header_tab-days_value">59</div>
+                            <div class="header_tab-days_value" id="minutes">59</div>
                             <div class="header_tab-days_info">M</div>
+                        </div>
+                        <div class="header_tab-days">
+                            <div class="header_tab-days_value" id="seconds">59</div>
+                            <div class="header_tab-days_info">S</div>
                         </div>
                     </div>
                 </div>
@@ -185,11 +188,13 @@
     <section class="section section_video" id="video">
         <div class="video">
             <h3 class="video_header">About Game</h3>
-            <div class="video_info">
-                <div class="video_info-title">Watch the Trailer</div>
-                <div class="video_info-btn">PLAY</div>
+            <div class="video_wrapper">
+                <div class="video_info">
+                    <div class="video_info-title">Watch the Trailer</div>
+                    <div class="video_info-btn">PLAY</div>
+                </div>
+                <video src="./assets/images/video.mp4" id="videoPlayer" poster="./assets/images/bg-video.png"></video>
             </div>
-            <video src="./assets/images/video.mp4" id="videoPlayer" poster="./assets/images/bg-video.png"></video>
         </div>
     </section>
 
@@ -443,5 +448,41 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer_top flex">
+                <ul class="footer_items flex flex-center">
+                    <li><a href="#editions" class="footer_item">editions</a></li>
+                    <li><a href="#dual" class="footer_item">controller</a></li>
+                    <li><a href="#video" class="footer_item">ABOUT GAME</a></li>
+                    <li><a href="#explore" class="footer_item">Explore</a></li>
+                    <li><a href="#news" class="footer_item">news</a></li>
+                    <li><a href="#faq" class="footer_item">FAQ</a></li>
+                </ul>
+                <div class="footer_lang flex">
+                    <span>Language:</span>
+                    <div class="footer_lang-list">
+                        <div class="footer_lang-list_current">English</div>
+                        <div class="footer_lang-list_var">
+                            <div class="footer_lang-list_var-item">Russian</div>
+                            <div class="footer_lang-list_var-item">English</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_text">
+                Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.
+            </div>
+
+            <div class="footer_icon">
+                <img src="./assets/images/ps-logo.png" alt="logo">
+            </div>
+            <div class="footer_date">2023</div>
+            <div class="footer_dev">Developed by <a target="_blank" href="https://github.com/thrillu4">thrillu4</a>. All rights reserved</div>
+        </div>
+    </footer>
 </body>
 </html>

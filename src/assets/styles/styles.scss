@@ -2,6 +2,7 @@
 @import './base/colors.scss';
 @import './base/animation.scss';
 @import './base/mixins.scss';
+@import './base/reset.scss';
 
 //sections
 @import './sections/head.scss';
@@ -11,3 +12,4 @@
 @import './sections/explore.scss';
 @import './sections/news.scss';
 @import './sections/faq.scss';
+@import './sections/footer.scss';

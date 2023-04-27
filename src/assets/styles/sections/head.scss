@@ -126,15 +126,14 @@
             }
         }
 
-        // Active Button for nav bar
-
-        &.opened {
+        // Activation for nav bar
+        &:hover {
             .header {
                 &_menu {
                     &-items {
                         opacity: 1;
                         transform: translateX(0);
-                        transition: opacity 0.2s, transform 0.25s;
+                        transition: opacity 0.2s, transform 0.3s;
                     }
                 }
                 &_hamburger {
