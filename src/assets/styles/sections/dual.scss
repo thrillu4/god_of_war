@@ -8,8 +8,8 @@
         color: $white;
     }
     &_menu {
-        column-gap: 5%;
         margin-top: 20px;
+        column-gap: 5%;
         transition: column-gap 0.5s;
     }
     &_descr {

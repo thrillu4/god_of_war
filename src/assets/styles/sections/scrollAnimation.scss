@@ -1,0 +1,30 @@
+.section {
+    &.hidden {
+        .editions {
+            &_card {
+                transition: transform 0;
+                transform: translateX(-2000px);
+            }
+        }
+        .dual {
+            &_menu {
+                transition: column-gap 0;
+                column-gap: 250%
+            }
+        }
+        .explore {
+            &_info {
+                transition: column-gap 0;
+                column-gap: 250%
+            }
+        }
+        .video {
+            transition: transform 0;
+            transform: scale(1);
+        }
+        .h2 {
+            opacity: 0;
+            transition: opacity 0;
+        }
+    }
+}

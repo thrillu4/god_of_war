@@ -50,10 +50,12 @@
             flex-direction: column;
             height: 100%;
             p {
+                margin-bottom: 12px;
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 17px;
                 color: #D9D9D9;
+                overflow-y: hidden;
             }
         }
         &-btn {

@@ -115,7 +115,7 @@
     </section>
 
     <!-- Editions -->
-    <section class="section section_editions" id="editions">
+    <section class="section hidden section_editions" id="editions">
         <div class="container">
             <div class="editions">
                 <h2>Editions</h2>
@@ -163,7 +163,7 @@
 
     <!-- DualSence -->
 
-    <section class="section section_dual" id="dual">
+    <section class="section hidden section_dual" id="dual">
         <div class="container">
             <div class="dual">
                 <h3 class="dual_header">DualSence</h3>
@@ -185,7 +185,7 @@
     </section>
 
     <!-- Video -->
-    <section class="section section_video" id="video">
+    <section class="section hidden section_video" id="video">
         <div class="video">
             <h3 class="video_header">About Game</h3>
             <div class="video_wrapper">
@@ -199,7 +199,7 @@
     </section>
 
     <!-- Explore -->
-    <section class="section section_explore" id="explore">
+    <section class="section hidden section_explore" id="explore">
         <div class="container">
             <div class="explore">
                 <h2 class="explore_header">Explore the God of War series</h2>
@@ -209,12 +209,12 @@
                         </div>
 
                         <div class="explore_item-variation flex flex-center">
-                            <div class="explore_item-var active">Minimum</div>
+                            <div class="explore_item-var active" data-requirements="minimum">Minimum</div>
                             <div class="explore_item-checkbox">
                                 <input type="checkbox" class="checkbox" name="requirements">
                                 <span></span>
                             </div>
-                            <div class="explore_item-var">Recommended</div>
+                            <div class="explore_item-var" data-requirements="recommended">Recommended</div>
                         </div>
                         
                         <div class="explore_info flex flex-center">
@@ -226,7 +226,7 @@
                             </div>
                             </div>
                             <div class="explore_info-descr">
-                                <ul class="explore_info-descr_param active">
+                                <ul class="explore_info-descr_param active" id="minimum" >
                                     <li><span class="violet">CPU</span>: Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)
                                     </li>
                                     <li><span class="violet">RAM</span>: 8 GB</li>
@@ -240,6 +240,24 @@
                                     </li>
                                     <li><span class="violet">DEDICATED VIDEO RAM</span>: 4 GB</li>
                                 </ul>
+
+                                <ul class="explore_info-descr_param" id="recommended">
+                                    <li>
+                                      <span class="violet">CPU</span>: Intel i5-2500k or AMD Ryzen
+                                      5 1200
+                                    </li>
+                                    <li><span class="violet">RAM</span>: 8 GB</li>
+                                    <li><span class="violet">OS</span>: Windows 11 64-bit</li>
+                                    <li>
+                                      <span class="violet">VIDEOCARD</span>: NVIDIA GTX 1060 (6
+                                      GB) or AMD RX 570 (4 GB)
+                                    </li>
+                                    <li><span class="violet">PIXEL SHADER</span>: 5.1</li>
+                                    <li><span class="violet">VERTEX SHADER</span>: 5.1</li>
+                                    <li><span class="violet">FREE DISK SPACE</span>: 70 GB</li>
+                                    <li><span class="violet">DEDICATED VIDEO RAM</span>: 6 GB</li>
+                                  </ul>
+
                                 <div class="explore_info-descr_btn">buy NOW</div>
                             </div>
                         </div>
@@ -249,18 +267,18 @@
                         </div>
         
                         <div class="explore_item-variation flex flex-center">
-                            <div class="explore_item-var active">Standard</div>
+                            <div class="explore_item-var active" data-ps4requirements="standard">Standard</div>
                             <div class="explore_item-checkbox">
-                                <input type="checkbox" class="checkbox" name="requirements">
+                                <input type="checkbox" class="checkbox" name="ps4requirements">
                                 <span></span>
                             </div>
-                            <div class="explore_item-var">Limited</div>
+                            <div class="explore_item-var" data-ps4requirements="limited">Limited</div>
                         </div>
                         <div class="explore_item-price">15.99$</div>
                         
                         <div class="explore_info flex reverse flex-center">
                             <div class="explore_info-descr">
-                                <ul class="explore_info-descr_param active">
+                                <ul class="explore_info-descr_param active" id="standard">
                                     <li><span class="violet">Platform</span>: PS4
                                     </li>
                                     <li><span class="violet">Premiere</span>: 
@@ -270,15 +288,31 @@
                                     </li>
                                     <li><span class="violet">Species</span>: Action, Adventure
                                     </li>
-                                    <li><span class="violet">Voice</span>: 5.1
-                                    </li>
-                                    <li><span class="violet">VERTEX SHADER</span>: 
+                                    <li><span class="violet">Voice</span>: 
                                         English, Polish, Russian
-                                        
                                     </li>
                                     <li><span class="violet">Display languages</span>: English, Dutch, Polish, Russian, Turkish
                                     </li>
                                 </ul>
+
+                                <ul class="explore_info-descr_param" id="limited">
+                                    <li><span class="violet">Platform</span>: PS4, PS5</li>
+                                    <li><span class="violet">Premiere</span>: 20.4.2018</li>
+                                    <li>
+                                      <span class="violet">Publisher</span>: Sony Interactive
+                                      Entertainment Europe
+                                    </li>
+                                    <li>
+                                      <span class="violet">Species</span>: Action, Adventure
+                                    </li>
+                                    <li>
+                                      <span class="violet">Voice</span>: English, Polish
+                                    </li>
+                                    <li>
+                                      <span class="violet">Display languages</span>: English,
+                                      Dutch, Polish
+                                    </li>
+                                  </ul>
                                 <div class="explore_info-descr_btn reverse">buy NOW</div>
                             </div>
                             <div class="explore_info-img_wrap reverse">
@@ -295,7 +329,7 @@
     </section>
 
     <!-- News -->
-    <section class="section section_news" id="news">
+    <section class="section hidden section_news" id="news">
         <h2>News</h2>
         <div class="swiper flex flex-center news">
             <div class="swiper-wrapper">
@@ -352,6 +386,77 @@
                         <div class="news_info-name">God of War Ragnarok </div>
                         <div class="news_info-date">19/10/2022</div>
                     </div>
+                    <div class="news_title">Santa Monica Studio Pleads for Minimal God of War Ragnarok Spoilers As Game Leaks</div>
+                    <div class="news_descr flex flex-center">
+                        <div class="news_descr-img" style="background-image: url(./assets/images/news5.png)"></div>
+                        <div class="news_descr-text flex">
+                            <p>Santa Monica Studio has shown as little of God of War Ragnarok as possible prior to release, so it's a shame to see the game break street date and begin to leak. Subsequently, the developer has released a statement, pleading with fans to keep story information to themselves. It adds that it's doing its best to “limit the exposure of unsanctioned footage” but admits it “cannot catch everything”.</p>
+                            <a href="#" class="news_descr-btn">read</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news_item">
+                    <div class="news_info flex">
+                        <div class="news_info-name">God of War Ragnarok </div>
+                        <div class="news_info-date">19/10/2022</div>
+                    </div>
+                    <div class="news_title">God of War Ragnarok Update 2.04 Is Available Now, Here Are All the Patch Notes</div>
+                    <div class="news_descr flex flex-center">
+                        <div class="news_descr-img" style="background-image: url(./assets/images/news6.png)"></div>
+                        <div class="news_descr-text flex">
+                            <p>The latest patch for God of War Ragnarok has now arrived on PS5 and PS4. While we've been pretty lucky and seen next to no issues with the game at all, there are naturally a few bugs affecting some players. Update 2.04 is out right now, and it's on the smaller side, but does fix a couple of nasty problems.</p>
+                            <a href="#" class="news_descr-btn">read</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news_item">
+                    <div class="news_info flex">
+                        <div class="news_info-name">God of War Ragnarok </div>
+                        <div class="news_info-date">19/10/2022</div>
+                    </div>
+                    <div class="news_title">God of War Ragnarok's Huge New Game Plus Update Out Now on PS5, PS4</div>
+                    <div class="news_descr flex flex-center">
+                        <div class="news_descr-img" style="background-image: url(./assets/images/news7.png)"></div>
+                        <div class="news_descr-text flex">
+                            <p>God of War Ragnarok has just received a major update on PS5 and PS4, introducing the long-awaited New Game Plus mode. The update is available to download and install right now.</p>
+                            <a href="#" class="news_descr-btn">read</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news_item">
+                    <div class="news_info flex">
+                        <div class="news_info-name">God of War Ragnarok </div>
+                        <div class="news_info-date">19/10/2022</div>
+                    </div>
+                    <div class="news_title">Deal: God of War Ragnarok PS5 Consoles Get Tasty Limited-Time Discount</div>
+                    <div class="news_descr flex flex-center">
+                        <div class="news_descr-img" style="background-image: url(./assets/images/news8.png)"></div>
+                        <div class="news_descr-text flex">
+                            <p>With PS5 consoles becoming more and more readily available at retail, we've thankfully reached a point where you can hit up your favourite store and pick up a shiny new system with relative ease. That hasn't always been the case, of course, meaning discounts on consoles have been a very rare occurrence indeed.</p>
+                            <a href="#" class="news_descr-btn">read</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide news_item">
+                    <div class="news_info flex">
+                        <div class="news_info-name">God of War Ragnarok </div>
+                        <div class="news_info-date">19/10/2022</div>
+                    </div>
+                    <div class="news_title">God of War Ragnarok 3-Hour Trial Now Available on PS Plus Premium</div>
+                    <div class="news_descr flex flex-center">
+                        <div class="news_descr-img" style="background-image: url(./assets/images/news9.png)"></div>
+                        <div class="news_descr-text flex">
+                            <p>One of PS Plus Premium's best perks is its range of full game trials, which has been expanding quite a lot in recent months. These allow members to download titles and play them for a limited time, and if they like what they play, their progress carries over if they make a purchase.</p>
+                            <a href="#" class="news_descr-btn">read</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide news_item">
+                    <div class="news_info flex">
+                        <div class="news_info-name">God of War Ragnarok </div>
+                        <div class="news_info-date">19/10/2022</div>
+                    </div>
                     <div class="news_title">Spectacular God of War Ragnarok Montage Highlights</div>
                     <div class="news_descr flex flex-center">
                         <div class="news_descr-img" style="background-image: url(./assets/images/news4.png)"></div>
@@ -363,7 +468,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-button swiper-button-prev flex flex-center">
+            <div class="swiper-button-prev swiper-button flex flex-center">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24px"
@@ -381,7 +486,7 @@
                     />
                 </svg>
             </div>
-            <div class="swiper-button swiper-button-next flex flex-center">
+            <div class="swiper-button-next swiper-button flex flex-center">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24px"
@@ -403,7 +508,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section section_faq" id="faq">
+    <section class="section hidden section_faq" id="faq">
         <div class="container">
             <h2>FAQ</h2>
             <div class="faq_items flex">

@@ -72,7 +72,7 @@
     &_info {
         margin-top: 55px;
         column-gap: 5%;
-        transition: column-gap 0.5s;
+        transition: column-gap .5s;
         &.reverse {
             text-align: right;
         }
@@ -114,9 +114,6 @@
         &-descr {
             min-width: max-content;
             width: 50%;
-            &.reverse {
-
-            }
             &_param {
                 flex-direction: column;
                 font-weight: 400;

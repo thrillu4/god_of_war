@@ -11,6 +11,14 @@
         padding: 17px;
         background: linear-gradient(180deg, #141615 0%, #1C2023 100%);
         border-radius: 6px;
+        transition: transform 1s;
+        transform: translate(0);
+        &:nth-child(2) {
+            transition-delay: .1s;
+        }
+        &:last-child {
+            transition-delay: .3s;
+        }
         &-title {
             margin-top: 20px;
             line-height: 19px;
