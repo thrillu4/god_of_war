@@ -2,10 +2,9 @@
     &_menu {
         padding-top: 40px;
         min-height: 100vh;
-        max-width: 1920px;
+        width: 100%;
         position: relative;
         margin: 0 auto;
-
         &::after,
         &::before {
             content: '';
