@@ -13,18 +13,26 @@
             }
         }
         .explore {
-            &_info {
-                transition: column-gap 0;
-                column-gap: 250%
+            &_info-img_wrap {
+                transition: transform 0;
+                transform: translateX(-2000px);
+            }
+            &_info-descr {
+                transition: transform 0;
+                transform: translateX(2000px);
             }
         }
         .video {
             transition: transform 0;
-            transform: scale(1);
+            transform: scale(0);
         }
         .h2 {
             opacity: 0;
             transition: opacity 0;
+        }
+        .faq_item {
+            transform: translate(-2000px);
+            transition: transform 0;
         }
     }
 }

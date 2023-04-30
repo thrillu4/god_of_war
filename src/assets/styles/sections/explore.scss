@@ -82,6 +82,8 @@
             display: flex;
             align-items: center;
             justify-content: end;
+            transition: transform 1s;
+            transform: translate(0);
             &.reverse {
                 justify-content: start;
             }
@@ -114,6 +116,8 @@
         &-descr {
             min-width: max-content;
             width: 50%;
+            transition: transform 1s;
+            transform: translate(0);
             &_param {
                 flex-direction: column;
                 font-weight: 400;

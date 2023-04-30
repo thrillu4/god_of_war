@@ -38,14 +38,14 @@
                     </div>
                     <nav class="header_nav">
                         <ul class="header_menu-items flex flex-center">
-                            <li class="header_menu-item" href="#editions">editions</li>
-                            <li class="header_menu-item" href="#dual">controller</li>
-                            <li class="header_menu-item" href="#video">ABOUT GAME</li>
-                            <li class="header_menu-item" href="#explore">Explore</li>
-                            <li class="header_menu-item" href="#news">news</li>
-                            <li class="header_menu-item" href="#faq">FAQ</li>
-                            <li class="header_menu-item lang">
-                                <span class="current_lang">English</span>
+                            <li class="header_menu-item link" data-text="editions" href="#editions">editions</li>
+                            <li class="header_menu-item link" data-text="controller" href="#dual">controller</li>
+                            <li class="header_menu-item link" data-text="video" href="#video">ABOUT GAME</li>
+                            <li class="header_menu-item link" data-text="explore" href="#explore">Explore</li>
+                            <li class="header_menu-item link" data-text="news" href="#news">news</li>
+                            <li class="header_menu-item link" data-text="faq" href="#faq">FAQ</li>
+                            <li class="header_menu-item link lang">
+                                <span data-text="lang" class="current_lang">Language</span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -64,11 +64,11 @@
                                 </svg>
                                     <!-- Underscore lang-panel -->
                                 <div class="header_menu-langs">
-                                    <div class="header_menu-lang">
+                                    <div class="header_menu-lang language" data-lang="en">
                                         English
                                     </div>
-                                    <div class="header_menu-lang">
-                                        Russian
+                                    <div class="header_menu-lang language" data-lang="ru">
+                                        Русский
                                     </div>
                                 </div>
                             </li>
@@ -78,23 +78,23 @@
 
                 <!-- Timer -->
                 <div class="header_timer flex flex-center">
-                    <span>Release :</span>
+                    <span data-text="release">Release :</span>
                     <div class="header_tab flex flex-center">
                         <div class="header_tab-days">
-                            <div class="header_tab-days_value" id="days">20</div>
-                            <div class="header_tab-days_info">D</div>
+                            <div class="header_tab-days_value" id="days">0</div>
+                            <div data-text="d" class="header_tab-days_info">D</div>
                         </div>
                         <div class="header_tab-days">
-                            <div class="header_tab-days_value" id="hours">20</div>
-                            <div class="header_tab-days_info">H</div>
+                            <div class="header_tab-days_value" id="hours">0</div>
+                            <div data-text="h" class="header_tab-days_info">H</div>
                         </div>
                         <div class="header_tab-days">
-                            <div class="header_tab-days_value" id="minutes">59</div>
-                            <div class="header_tab-days_info">M</div>
+                            <div class="header_tab-days_value" id="minutes">0</div>
+                            <div data-text="m" class="header_tab-days_info">M</div>
                         </div>
                         <div class="header_tab-days">
-                            <div class="header_tab-days_value" id="seconds">59</div>
-                            <div class="header_tab-days_info">S</div>
+                            <div class="header_tab-days_value" id="seconds">0</div>
+                            <div data-text="s" class="header_tab-days_info">S</div>
                         </div>
                     </div>
                 </div>
@@ -104,11 +104,11 @@
             <div class="descr">
                 <div class="descr_wrapper">
                     <h1>God of War Ragnarök</h1>
-                    <div class="descr_subtitle">
+                    <div data-text="taking" class="descr_subtitle">
                         Taking place three years following the events of the previous game, Fimbulwinter, a great winter that spans three summers, is drawing to a close which will begin the prophesied Ragnarök.
                     </div>
                     <!-- button -->
-                    <div class="descr_btn">buy NOW</div>
+                    <div data-text="buy" class="descr_btn buy_button" data-value="0">buy NOW</div>
                 </div>
             </div>
         </div>
@@ -118,11 +118,11 @@
     <section class="section hidden section_editions" id="editions">
         <div class="container">
             <div class="editions">
-                <h2>Editions</h2>
+                <h2 data-text="editions">Editions</h2>
                 <div class="editions_cards">
                     <div class="editions_card">
                         <img src="./assets/images/card1.png" alt="image" class="editions_card-img">
-                        <h3 class="editions_card-title">Standard Edition</h3>
+                        <h3 data-text="standard" class="editions_card-title">Standard Edition</h3>
                         <div class="editions_card-subtitle">PS5</div>
                         <ul class="editions_card-descr">
                             <li>Offline play enabled</li>
@@ -130,11 +130,11 @@
                             <li>Trigger effect required</li>
                         </ul>
                         <div class="editions_card-price">19.99$</div>
-                        <div class="editions_card-btn">buy NOW</div>
+                        <div class="editions_card-btn buy_button" data-text="buy" data-value="0">buy NOW</div>
                     </div>
                     <div class="editions_card">
                         <img src="./assets/images/card1.png" alt="image" class="editions_card-img">
-                        <h3 class="editions_card-title">Standard Edition</h3>
+                        <h3 data-text="standard" class="editions_card-title">Standard Edition</h3>
                         <div class="editions_card-subtitle">PS5</div>
                         <ul class="editions_card-descr">
                             <li>Offline play enabled</li>
@@ -142,11 +142,11 @@
                             <li>Trigger effect required</li>
                         </ul>
                         <div class="editions_card-price">18.99$</div>
-                        <div class="editions_card-btn">buy NOW</div>
+                        <div class="editions_card-btn buy_button" data-text="buy" data-value="1">buy NOW</div>
                     </div>
                     <div class="editions_card">
                         <img src="./assets/images/card3.png" alt="image" class="editions_card-img">
-                        <h3 class="editions_card-title">Digital Deluxe Edition</h3>
+                        <h3 data-text="deluxe" class="editions_card-title">Digital Deluxe Edition</h3>
                         <div class="editions_card-subtitle">PS5</div>
                         <ul class="editions_card-descr">
                             <li>All features of Standard Edition</li>
@@ -154,7 +154,7 @@
                             <li>Official digital soundtrack</li>
                         </ul>
                         <div class="editions_card-price">29.99$</div>
-                        <div class="editions_card-btn">buy NOW</div>
+                        <div class="editions_card-btn buy_button" data-text="buy" data-value="2">buy NOW</div>
                     </div>
                 </div>
             </div>
@@ -166,14 +166,14 @@
     <section class="section hidden section_dual" id="dual">
         <div class="container">
             <div class="dual">
-                <h3 class="dual_header">DualSence</h3>
+                <h3 data-text="controller" class="dual_header">DualSence</h3>
                 <div class="dual_menu flex flex-center">
                     <div class="dual_descr">
-                        <p>You can also buy an exclusive controller with the <span class="violet">God of War Ragnarok</span> theme for PS5</p>
-                        <p>If you purchase a controller and a game (any edition), you will receive a <span class="red">15%</span> discount on two items.</p>
+                        <p data-text="dualtext">You can also buy an exclusive controller with the <span class="violet">God of War Ragnarok</span> theme for PS5</p>
+                        <p data-text="dualtext2">If you purchase a controller and a game (any edition), you will receive a <span class="red">15%</span> discount on two items.</p>
                         <div class="dual_pursh flex flex-center">
                             <div class="dual_pursh-price">35.99$</div>
-                            <button class="dual_pursh-btn">buy dualsense with a game</button>
+                            <button data-text="buydual" class="dual_pursh-btn buy_button" data-value="3">buy dualsense with a game</button>
                         </div>
                     </div>
                     <div class="dual_img">
@@ -187,11 +187,11 @@
     <!-- Video -->
     <section class="section hidden section_video" id="video">
         <div class="video">
-            <h3 class="video_header">About Game</h3>
+            <h3 data-text="video" class="video_header">About Game</h3>
             <div class="video_wrapper">
                 <div class="video_info">
-                    <div class="video_info-title">Watch the Trailer</div>
-                    <div class="video_info-btn">PLAY</div>
+                    <div data-text="watch" class="video_info-title">Watch the Trailer</div>
+                    <div data-text="play" class="video_info-btn">PLAY</div>
                 </div>
                 <video src="./assets/images/video.mp4" id="videoPlayer" poster="./assets/images/bg-video.png"></video>
             </div>
@@ -202,19 +202,19 @@
     <section class="section hidden section_explore" id="explore">
         <div class="container">
             <div class="explore">
-                <h2 class="explore_header">Explore the God of War series</h2>
+                <h2 data-text="explore" class="explore_header">Explore the God of War series</h2>
                 <div class="explore_items flex">
                     <div class="explore_item">
-                        <div class="explore_item-title">Here are the God of War (PC) System Requirements
+                        <div data-text="sysreq" class="explore_item-title">Here are the God of War (PC) System Requirements
                         </div>
 
                         <div class="explore_item-variation flex flex-center">
-                            <div class="explore_item-var active" data-requirements="minimum">Minimum</div>
+                            <div data-text="minimum" class="explore_item-var active" data-requirements="minimum">Minimum</div>
                             <div class="explore_item-checkbox">
                                 <input type="checkbox" class="checkbox" name="requirements">
                                 <span></span>
                             </div>
-                            <div class="explore_item-var" data-requirements="recommended">Recommended</div>
+                            <div data-text="recommended" class="explore_item-var" data-requirements="recommended">Recommended</div>
                         </div>
                         
                         <div class="explore_info flex flex-center">
@@ -258,7 +258,7 @@
                                     <li><span class="violet">DEDICATED VIDEO RAM</span>: 6 GB</li>
                                   </ul>
 
-                                <div class="explore_info-descr_btn">buy NOW</div>
+                                <div class="explore_info-descr_btn buy_button" data-value="0" data-text="buy">buy NOW</div>
                             </div>
                         </div>
                     </div>
@@ -267,12 +267,12 @@
                         </div>
         
                         <div class="explore_item-variation flex flex-center">
-                            <div class="explore_item-var active" data-ps4requirements="standard">Standard</div>
+                            <div data-text="standard" class="explore_item-var active" data-ps4requirements="standard">Standard</div>
                             <div class="explore_item-checkbox">
                                 <input type="checkbox" class="checkbox" name="ps4requirements">
                                 <span></span>
                             </div>
-                            <div class="explore_item-var" data-ps4requirements="limited">Limited</div>
+                            <div data-text="limited" class="explore_item-var" data-ps4requirements="limited">Limited</div>
                         </div>
                         <div class="explore_item-price">15.99$</div>
                         
@@ -313,7 +313,7 @@
                                       Dutch, Polish
                                     </li>
                                   </ul>
-                                <div class="explore_info-descr_btn reverse">buy NOW</div>
+                                <div class="explore_info-descr_btn reverse buy_button" data-text="buy" data-value="4">buy NOW</div>
                             </div>
                             <div class="explore_info-img_wrap reverse">
                                 <div class="explore_info-img"
@@ -330,7 +330,7 @@
 
     <!-- News -->
     <section class="section hidden section_news" id="news">
-        <h2>News</h2>
+        <h2 data-text="news">News</h2>
         <div class="swiper flex flex-center news">
             <div class="swiper-wrapper">
                 <div class="swiper-slide news_item">
@@ -510,37 +510,37 @@
     <!-- FAQ -->
     <section class="section hidden section_faq" id="faq">
         <div class="container">
-            <h2>FAQ</h2>
+            <h2 data-text="faq">FAQ</h2>
             <div class="faq_items flex">
                 <div class="faq_item">
                     <div class="faq_item-header flex">
-                        <p>When is the next God of War coming out?</p>
+                        <p data-text="faq1">When is the next God of War coming out?</p>
                         <span class="flex flex-center"></span>
                     </div>
                     <div class="faq_item-content">
-                        <p>
+                        <p data-text="faq11">
                             God of War Ragnarök will release on <span class="red">November 9, 2022</span>. To get the latest updates on release timing, make sure you follow Santa Monica Studio on Twitter, Instagram and Facebook! 
                         </p>
                     </div>
                 </div>
                 <div class="faq_item">
                     <div class="faq_item-header flex">
-                        <p>Will God of War Ragnarök have an upgrade path?</p>
+                        <p data-text="faq2">Will God of War Ragnarök have an upgrade path?</p>
                         <span class="flex flex-center"></span>
                     </div>
                     <div class="faq_item-content">
-                        <p>
+                        <p data-text="faq22">
                             Yes, God of War Ragnarök will offer a digital upgrade* option from a disc or digital PS4 game to the digital <span class="red">PS5 version</span> for an additional cost. 
                         </p>
                     </div>
                 </div>
                 <div class="faq_item">
                     <div class="faq_item-header flex">
-                        <p>What is god of war about?</p>
+                        <p data-text="faq3">What is god of war about?</p>
                         <span class="flex flex-center"></span>
                     </div>
                     <div class="faq_item-content">
-                        <p>
+                        <p data-text="faq33">
                             First era (Greek mythology) God of War was first released in
                             North America on <span class="red">March 22, 2005</span>, for the PlayStation 2. After
                             ten years in the service of the Olympian gods, Spartan soldier
@@ -559,26 +559,26 @@
         <div class="container">
             <div class="footer_top flex">
                 <ul class="footer_items flex flex-center">
-                    <li><a href="#editions" class="footer_item">editions</a></li>
-                    <li><a href="#dual" class="footer_item">controller</a></li>
-                    <li><a href="#video" class="footer_item">ABOUT GAME</a></li>
-                    <li><a href="#explore" class="footer_item">Explore</a></li>
-                    <li><a href="#news" class="footer_item">news</a></li>
-                    <li><a href="#faq" class="footer_item">FAQ</a></li>
+                    <li><a href="#editions" data-text="editions" class="footer_item link">editions</a></li>
+                    <li><a href="#dual" data-text="controller" class="link footer_item">controller</a></li>
+                    <li><a href="#video" data-text="video" class="link footer_item">ABOUT GAME</a></li>
+                    <li><a href="#explore" data-text="explore" class="link footer_item">Explore</a></li>
+                    <li><a href="#news" data-text="news" class="link footer_item">news</a></li>
+                    <li><a href="#faq" data-text="faq" class="link footer_item">FAQ</a></li>
                 </ul>
                 <div class="footer_lang flex">
-                    <span>Language:</span>
+                    <span data-text="lang">Language:</span>
                     <div class="footer_lang-list">
-                        <div class="footer_lang-list_current">English</div>
+                        <div class="footer_lang-list_current" data-text="change">Change</div>
                         <div class="footer_lang-list_var">
-                            <div class="footer_lang-list_var-item">Russian</div>
-                            <div class="footer_lang-list_var-item">English</div>
+                            <div class="footer_lang-list_var-item language" data-lang="ru">Русский</div>
+                            <div class="footer_lang-list_var-item language" data-lang="en">English</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="footer_text">
+            <div data-text="footext" class="footer_text">
                 Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.
             </div>
 
@@ -589,5 +589,47 @@
             <div class="footer_dev">Developed by <a target="_blank" href="https://github.com/thrillu4">thrillu4</a>. All rights reserved</div>
         </div>
     </footer>
+
+    <!-- ModalScreen -->
+    <div class="modal">
+        <div class="modal_wrapper">
+            <div class="modal_close">x</div>
+            <div class="modal_title">GOD OF WAR RAGNAROK</div>
+            <div class="modal_subtitle">STANDARD EDTION</div>
+            <form class="form">
+                <div class="form_item full">
+                    <label for="card">CREDIT CARD:</label>
+                    <input type="text" required placeholder="0000 0000 0000 0000" id="card">
+                </div>
+                <div class="form_item">
+                    <label for="expire">expire:</label>
+                    <input type="text" required placeholder="mm/yy" id="expire">
+                </div>
+                <div class="form_item">
+                    <label for="ccv">CCV:</label>
+                    <input type="text" required placeholder="***" id="ccv">
+                </div>
+                <div class="form_item full">
+                    <label for="instant">INSTANT:</label>
+                    <input type="text" required placeholder="John Doe" id="instant">
+                </div>
+
+                <div class="form_checkbox flex flex-center">
+                    <input type="checkbox" name="agree" id="agree" required>
+                    <span class="check"></span>
+                    <label for="agree">I agree with the <span class="red">rules</span> of the site</label>
+                </div>
+                <div class="form_descr">
+                    Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.
+                </div>
+                <div class="form_sum flex flex-center">
+                    <div class="form_sum-text">YOUR TOTAL SUMMA:</div>
+                    <div class="form_sum-price">19.99$</div>
+                </div>
+                <button class="form_btn" type="submit">buy NOW</button>
+            </form>
+        </div>
+    </div>
+    <div class="overlay"></div>
 </body>
 </html>

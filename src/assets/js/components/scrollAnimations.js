@@ -4,7 +4,7 @@ export const scrollAnimations = (Sections) => {
     window.addEventListener('scroll', () => {
         const {scrollY: y, innerHeight: h} = window;
         sections.forEach(section => {
-            if(y > section.offsetTop - h / 1.5) {
+            if(y > section.offsetTop - h / 2) {
                 section.classList.remove('hidden');
             }
         })

@@ -9,8 +9,8 @@
         &::after,
         &::before {
             content: '';
-            height: 764px;
-            width: 1363px;
+            height: 100vh;
+            width: 100%;
             top: 0;
             right: 0;
             display: block;
@@ -24,8 +24,7 @@
         }
 
         &::before {
-            background: url(../images/bg.png) no-repeat center/cover;
-            
+            background: url(../images/3.png) center center/cover no-repeat;
         }
     }
     
@@ -45,7 +44,7 @@
             &-item {
                 cursor: pointer;
                 position: relative;
-                color: rgba(255, 255, 255, 0.5);
+                color: $white;
                 transition: color .25s;
                 &:hover {
                     color: $violet;

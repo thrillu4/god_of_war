@@ -6,11 +6,15 @@ import { checkbox } from './components/checkbox';
 import { swiper } from './components/slider';
 import { faq } from './components/faq';
 import { scrollAnimations } from './components/scrollAnimations';
+import { language } from './components/language';
+import { modal } from './components/modal';
 
 timer("May 30, 2023 05:00:00");
-links('.header_menu-item');
+links('.link');
 videoPlayer('.video_info-btn', '.video_info', 'videoPlayer', '.video_wrapper');
 checkbox('.checkbox');
 swiper();
 faq('.faq_item');
 scrollAnimations('.section');
+language('.language');
+modal('.buy_button', '.modal', '.modal_subtitle', '.form_sum-price', '.modal_close', '.overlay');
