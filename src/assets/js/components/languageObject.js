@@ -33,7 +33,14 @@ export const langObj = {
         faq22: 'Yes, God of War Ragnarök will offer a digital upgrade* option from a disc or digital PS4 game to the digital PS5 version for an additional cost.',
         faq3: 'What is god of war about?',
         faq33: "First era (Greek mythology) God of War was first released in North America on March 22, 2005, for the PlayStation 2. After ten years in the service of the Olympian gods, Spartan soldier Kratos is tasked by Athena to find Pandora's box, the key to defeating Ares, the God of War, who is running amok through Athens.",
-        footext: 'Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.'
+        footext: 'Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.',
+        sum: 'YOUR TOTAL SUMMA:',
+        formd: 'Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.',
+        agree: 'I agree with the rules of the site',
+        card: 'CREDIT CARD:',
+        date: 'EXPIRE:',
+        instant: 'INSTANT:',
+
     },
     ru: {
         editions: 'Издания',
@@ -69,6 +76,12 @@ export const langObj = {
         faq22: 'Да, God of War Ragnarok предлагает вариант цифрового обновления* с диска или цифровой игры для PS4 до цифровой версии для PS5 за дополнительную плату.',
         faq3: 'О чем бог войны?',
         faq33: 'Первая эра (греческая мифология) God of War впервые была выпущена в Северной Америке 22 марта 2005 года для PlayStation 2. После десяти лет службы олимпийским богам Афина поручает спартанскому солдату Кратосу найти ящик Пандоры, ключ к победе над Аресом, богом войны, который в ярости бежит по Афинам.',
-        footext: 'Загрузка этого продукта регулируется Условиями обслуживания PlayStation Network и нашими Условиями использования программного обеспечения, а также любыми особыми дополнительными условиями, применимыми к этому продукту. Если вы не хотите принимать эти условия, не загружайте этот продукт. См. Условия использования для получения более важной информации.'
+        footext: 'Загрузка этого продукта регулируется Условиями обслуживания PlayStation Network и нашими Условиями использования программного обеспечения, а также любыми особыми дополнительными условиями, применимыми к этому продукту. Если вы не хотите принимать эти условия, не загружайте этот продукт. См. Условия использования для получения более важной информации.',
+        sum: 'Ваша конечная сумма:',
+        formd: 'Загрузка этого продукта регулируется Условиями обслуживания PlayStation Network и нашими Условиями использования программного обеспечения, а также любыми особыми дополнительными условиями, применимыми к этому продукту. Если вы не хотите принимать эти условия, не загружайте этот продукт. См. Условия использования для получения более важной информации.',
+        agree: 'Я согласен с правилами пользования',
+        card: 'Номер Карты:',
+        date: 'Выдана:',
+        instant: 'Владелец:',
     }
 }

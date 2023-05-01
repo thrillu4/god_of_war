@@ -123,9 +123,8 @@
                 }
             }
         }
-
         // Activation for nav bar
-        &:hover {
+        &.opened {
             .header {
                 &_menu {
                     &-items {

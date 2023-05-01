@@ -10,7 +10,7 @@ import { language } from './components/language';
 import { modal } from './components/modal';
 
 timer("May 30, 2023 05:00:00");
-links('.link');
+links('.link', '.header_hamburger', '.header');
 videoPlayer('.video_info-btn', '.video_info', 'videoPlayer', '.video_wrapper');
 checkbox('.checkbox');
 swiper();

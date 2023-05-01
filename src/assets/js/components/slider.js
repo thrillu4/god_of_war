@@ -15,6 +15,7 @@ export const swiper = () => {
         breakpoints: {
           320: {
             slidesPerView: 1,
+            spaceBetween: 20,
           },
           820: {
             slidesPerView: 2,
@@ -29,10 +30,10 @@ export const swiper = () => {
             spaceBetween: 20,
           }
         },
-        autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true
-          },
+        // autoplay: {
+        //     delay: 4000,
+        //     pauseOnMouseEnter: true
+        //   },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

@@ -595,14 +595,14 @@
         <div class="modal_wrapper">
             <div class="modal_close">x</div>
             <div class="modal_title">GOD OF WAR RAGNAROK</div>
-            <div class="modal_subtitle">STANDARD EDTION</div>
+            <div class="modal_subtitle">STANDARD EDITION</div>
             <form class="form">
                 <div class="form_item full">
-                    <label for="card">CREDIT CARD:</label>
+                    <label data-text="card" for="card">CREDIT CARD:</label>
                     <input type="text" required placeholder="0000 0000 0000 0000" id="card">
                 </div>
                 <div class="form_item">
-                    <label for="expire">expire:</label>
+                    <label data-text="date" for="expire">expire:</label>
                     <input type="text" required placeholder="mm/yy" id="expire">
                 </div>
                 <div class="form_item">
@@ -610,23 +610,23 @@
                     <input type="text" required placeholder="***" id="ccv">
                 </div>
                 <div class="form_item full">
-                    <label for="instant">INSTANT:</label>
+                    <label data-text="instant" for="instant">INSTANT:</label>
                     <input type="text" required placeholder="John Doe" id="instant">
                 </div>
 
                 <div class="form_checkbox flex flex-center">
                     <input type="checkbox" name="agree" id="agree" required>
                     <span class="check"></span>
-                    <label for="agree">I agree with the <span class="red">rules</span> of the site</label>
+                    <label data-text="agree" for="agree">I agree with the <span class="red">rules</span> of the site</label>
                 </div>
-                <div class="form_descr">
+                <div data-text="formd" class="form_descr">
                     Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.
                 </div>
                 <div class="form_sum flex flex-center">
-                    <div class="form_sum-text">YOUR TOTAL SUMMA:</div>
+                    <div data-text="sum" class="form_sum-text">YOUR TOTAL SUMMA:</div>
                     <div class="form_sum-price">19.99$</div>
                 </div>
-                <button class="form_btn" type="submit">buy NOW</button>
+                <button data-text="buy" class="form_btn" type="submit">buy NOW</button>
             </form>
         </div>
     </div>

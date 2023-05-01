@@ -1,5 +1,11 @@
-export const links = (links) => {
-    const menuLinks = document.querySelectorAll(links);
+export const links = (links, Hamburger, Header) => {
+    const menuLinks = document.querySelectorAll(links),
+          hamburger = document.querySelector(Hamburger),
+          header = document.querySelector(Header)
+
+    hamburger.addEventListener('click', () => {
+        header.classList.toggle('opened');
+    });
 
     menuLinks.forEach(link => {
         link.addEventListener('click', (e) => {

@@ -7,6 +7,12 @@
     .container {
         width: 1024px;
     }
+    .section {
+        .header_menu-items {
+            font-size: 12px;
+            column-gap: 13px
+        }
+    }
 }
 
 @media (max-width: 1100px) {
@@ -17,7 +23,6 @@
         &_cards {
             grid-template-columns: repeat(3, 1fr);
         }
-        
     }
     .section {
         .header_tab {
@@ -27,7 +32,14 @@
                 min-width: 45px;
             }
         }
-    } 
+        .header_timer {
+            column-gap: 5px;
+        }
+        .header_menu-items {
+            column-gap: 13px;
+            font-size: 10px;
+        }
+    }
 }
 
 @media (max-width: 968px) {
@@ -37,8 +49,11 @@
     .section .descr h1 {
         font-size: 70px;
     }
-    h2 {
-        font-size: 30px;
+    h2, h3 {
+        font-size: 30px !important;
+    }
+    .header {
+        pointer-events: fill;
     }
     .header_timer {
         display: none;
@@ -59,11 +74,353 @@
     .video_info-title {
         font-size: 30px;
     }
+    .section {
+        &.hidden {
+            .editions {
+                &_card {
+                    transition: transform 0;
+                    transform: translateX(0);
+                }
+            }
+            .dual {
+                &_menu {
+                    transition: column-gap 0;
+                    column-gap: 0;
+                }
+            }
+            .explore {
+                &_info-img_wrap {
+                    transition: transform 0;
+                    transform: translateX(0);
+                }
+                &_info-descr {
+                    transition: transform 0;
+                    transform: translateX(0);
+                }
+            }
+            .video {
+                transition: transform 0;
+                transform: scale(1);
+            }
+            .h2 {
+                opacity: 0;
+                transition: opacity 0;
+            }
+            .faq_item {
+                transform: translate(0);
+                transition: transform 0;
+            }
+        }
+    }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 640px) {
     .container {
-        width: 100%;
-        padding: 0 10px;
+        width: 520px;
+    }
+    .modal_wrapper {
+        padding: 12px;
+    }
+    .modal .form {
+        flex-direction: column;
+        width: 320px;
+
+    }
+    .modal .form_item input {
+        padding: 10px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 360px;
+    }
+    h2, h3 {
+        font-size: 20px !important;
+    }
+    .section {
+        .descr {
+            margin-top: 30%;
+        }
+        .header_menu-items {
+            column-gap: 9px;
+            font-size: 7px;
+        }
+        .descr h1 {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        .descr_subtitle {
+            font-size: 14px;
+        }
+        .buy_button {
+            padding: 5px 15px;
+        }
+        .dual_menu {
+            flex-direction: column-reverse;
+            row-gap: 10px;
+            margin-top: 55px;
+        }
+        .dual_pursh-btn {
+            font-size: 10px;
+        }
+        .explore_info-img_wrap {
+            display: none;
+        }
+        .explore_info-descr {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 60px;
+                height: 140px;
+                background-color: #ff4136;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                filter: blur(75px);
+                opacity: 0.8;
+            }
+        }
+        .explore_info {
+            margin-top: 25px;
+            background: url(../images/bg-card2.png) center center/cover no-repeat;
+            border-radius: 10%;
+        }
+        .explore_info-descr_param {
+            font-size: 13px;
+            text-align: start;
+        }
+        .explore_info-descr_btn {
+            margin-top: 20px;
+            margin-bottom: 8px;
+            &.reverse {
+                margin-left: 0;
+            }
+        }
+        &_news {
+            width: 360px;
+            margin: 0 auto;
+        }
+        .news_descr {
+            flex-direction: column;
+            row-gap: 40px ;
+            &-text {
+                display: none;
+            }
+            &-img {
+                width: 100%;
+            }
+        }
+        .swiper-button {
+            width: 25px;
+            height: 25px;
+        }
+        .news {
+            margin-top: 0;
+        }
+        &_news {
+            margin-top: 20px;
+        }
+        &_faq {
+            margin-top: 0;
+        }
+        .video_info-btn {
+            margin-top: 0;
+            font-size: 9px;
+            padding: 3px 11px;
+        }
+        .video_info-title {
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        .video {
+            margin-top: 30px;
+        }
+        .header_menu-lang {
+            font-size: 8px;
+        }
+        .header_menu-langs {
+            padding: 2px 8px;
+        }
+        .header_menu-item.lang svg {
+            width: 7px;
+            height: 7px;
+            margin-left: 5px;
+        }
+    }
+    .footer_lang {
+        font-size: 8px;
+    }
+    .footer_items {
+        font-size: 7px;
+        column-gap: 13px;
+    }
+    .footer_text {
+        font-size: 9px;
+        margin-top: 20px;
+    }
+    .footer_dev {
+        font-size: 10px;
+    }
+    .footer_icon {
+        margin-top: 20px;
+    }
+    .faq_item-header p {
+        font-size: 14px;
+    }
+    .faq_item-content p {
+        font-size: 12px;
+        padding-top: 8px;
+    }
+    .faq_items {
+        column-gap: 45px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 310px;
+    }
+    body {
+        font-size: 10px;
+    }
+    h2, h3 {
+        font-size: 16px !important;
+    }
+    .modal .form {
+        width: 230px;
+        row-gap: 5px;
+    }
+    .modal .form_descr {
+        font-size: 7px;
+    }
+    .modal .form_btn {
+        padding: 6px;
+    }
+    .modal_close {
+        top: 8px;
+        right: 8px;
+    }
+    .section {
+        .descr {
+            margin-top: 40%;
+        }
+        &_news {
+            width: 320px;
+        }
+        .header_nav {
+            margin-left: 7px;
+        }
+        .header_menu-items {
+            column-gap: 9px;
+            font-size: 6px;
+        }
+        .descr h1 {
+            font-size: 25px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .descr_subtitle {
+            font-size: 12px;
+            text-align: center;
+        }
+        .descr_btn {
+            padding: 5px 15px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        .editions_cards {
+            margin-top: 10px;
+        }
+        .editions_card-price {
+            font-size: 15px;
+        }
+        .dual_descr p {
+            font-size: 12px;
+        }
+        .dual_pursh-price {
+            font-size: 20px;
+        }
+        .dual_pursh-btn {
+            margin: 0;
+        }
+        .video_info-title {
+            font-size: 12px;
+        }
+        .video_info-btn {
+            font-size: 7px;
+        }
+        .explore {
+            margin-top: 30px;
+        }
+        .explore_items {
+            margin-top: 5px;
+            row-gap: 30px;
+        }
+        .explore_item-title {
+            font-size: 13px;
+        }
+        .explore_item-var.active {
+            font-size: 14px;
+        }
+        .faq_items {
+            margin-top: 10px;
+        }
+    }
+    .footer_top {
+        flex-direction: column;
+    }
+    .faq_item-header span {
+        width: 19px;
+        height: 19px;
+    }
+    .faq_item-content p {
+        font-size: 9px;
+        padding-top: 2px;
+    }
+    .footer_lang {
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    .footer_date {
+        font-size: 12px;
+    }
+    .footer_lang-list_var {
+        padding: 0px 5px;
+    }
+}
+
+@media (min-width: 978px) {
+    .header {
+        &:hover {
+            .header {
+                &_menu {
+                    &-items {
+                        opacity: 1;
+                        transform: translateX(0);
+                        transition: opacity 0.2s, transform 0.3s;
+                    }
+                }
+                &_hamburger {
+                    span {
+                        width: 12px;
+                        
+                        &:after {
+                            width: 25px;
+                        }
+                        &:before {
+                            width: 12px;
+                        }
+                    }
+                }
+                &_nav {
+                    z-index: 1;
+                }
+            }
+        }
     }
 }
