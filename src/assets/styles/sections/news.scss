@@ -44,6 +44,7 @@
             background: center center/cover no-repeat;
             min-width: 278px;
             height: 100%;
+            object-fit: cover;
         }
         &-text {
             flex-direction: column;
