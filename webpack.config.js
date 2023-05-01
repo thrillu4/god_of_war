@@ -34,12 +34,17 @@ module.exports = {
                   loader: "babel-loader",
                 }
             },
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
+            },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'God Of War',
-            template: 'src/index.html'
+            favicon: './src/assets/images/favicon/favicon-16x16.png',
+            template: 'src/index.html',
         })
     ]
 }
