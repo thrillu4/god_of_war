@@ -37,6 +37,7 @@
                 font-size: 14px;
                 line-height: 27px;
                 text-transform: uppercase;
+                transition: all .5s;
                 transform: translateX(-200px);
                 opacity: 0;
             }
@@ -108,7 +109,7 @@
                     content: '';
                     display: block;
                     width: 12px;
-                    height: 2px;
+                    height: 3px;
                     background-color: $white;
                     position: absolute;
                     transition: width .25s;
@@ -127,6 +128,9 @@
         &.opened {
             .header {
                 &_menu {
+                    background-color: rgba(0,0,0,.5);
+                    border-radius: 9px;
+                    padding: 0px 10px;
                     &-items {
                         opacity: 1;
                         transform: translateX(0);
@@ -199,4 +203,8 @@
             @include hoverViolet;
         }
     }
+}
+
+.status {
+    margin: 0 auto;
 }

@@ -30,10 +30,10 @@ export const swiper = () => {
             spaceBetween: 20,
           }
         },
-        // autoplay: {
-        //     delay: 4000,
-        //     pauseOnMouseEnter: true
-        //   },
+        autoplay: {
+            delay: 4000,
+            pauseOnMouseEnter: true
+          },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

@@ -46,7 +46,7 @@ export const langObj = {
         editions: 'Издания',
         controller: 'Геймпад',
         video: 'Об Игре',
-        explore: 'Узнать больше',
+        explore: 'Требования',
         news: 'Новости',
         faq: 'Вопросы',
         lang: 'Язык',

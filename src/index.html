@@ -587,19 +587,19 @@
             <form class="form">
                 <div class="form_item full">
                     <label data-text="card" for="card">CREDIT CARD:</label>
-                    <input type="text" required placeholder="0000 0000 0000 0000" id="card">
+                    <input type="text" maxlength="19" required placeholder="0000 0000 0000 0000" id="card">
                 </div>
                 <div class="form_item">
                     <label data-text="date" for="expire">expire:</label>
-                    <input type="text" required placeholder="mm/yy" id="expire">
+                    <input type="text" maxlength="5" required placeholder="mm/yy" id="expire">
                 </div>
                 <div class="form_item">
                     <label for="ccv">CCV:</label>
-                    <input type="text" required placeholder="***" id="ccv">
+                    <input type="password" maxlength="3" required placeholder="***" id="ccv">
                 </div>
                 <div class="form_item full">
                     <label data-text="instant" for="instant">INSTANT:</label>
-                    <input type="text" required placeholder="John Doe" id="instant">
+                    <input type="text" maxlength="50" required placeholder="John Doe" id="instant">
                 </div>
 
                 <div class="form_checkbox flex flex-center">
