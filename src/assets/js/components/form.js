@@ -53,6 +53,7 @@ export const form = (Form, Inputs, state) => {
                     setTimeout(() => {
                         clearAllInputs();
                         statusMessage.remove();
+                        isSubmitting = false;
                     }, 4000);
                 });
         return;
